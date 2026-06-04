@@ -1,0 +1,16 @@
+{
+  "name": "exoa-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EXOA Safety Console Platform Root",
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && ..\\venv\\Scripts\\python.exe -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload",
+    "dev": "node run.js",
+    "start": "node run.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style>
+      .outer-border { stroke: #000000; stroke-width: 3; fill: none; }
+      .wall-thick { stroke: #000000; stroke-width: 4; stroke-linecap: square; stroke-linejoin: miter; fill: none; }
+      .wall-thin { stroke: #000000; stroke-width: 2; stroke-linecap: square; stroke-linejoin: miter; fill: none; }
+      .dashed-line { stroke: #b58c63; stroke-width: 1; stroke-dasharray: 4,4; fill: none; }
+      .text-main { font-family: Arial, Helvetica, sans-serif; font-size: 8px; font-weight: bold; fill: #000000; }
+      .text-small { font-family: Arial, Helvetica, sans-serif; font-size: 6px; fill: #000000; }
+      
+      /* Dots/Icons styles */
+      .dot-red { fill: #d61118; stroke: #a00a10; stroke-width: 0.5; }
+      .dot-yellow { fill: #f2e613; stroke: #a39b03; stroke-width: 0.75; }
+      .dot-blue { fill: #1c75bc; stroke: #0f4471; stroke-width: 1; }
+      .dot-green { fill: #008542; stroke: #004d26; stroke-width: 1; }
+      
+      /* Hatching pattern for pillars */
+      .pillar { fill: #ffffff; stroke: #000000; stroke-width: 1; }
+      .hatch { stroke: #000000; stroke-width: 0.5; }
+    </style>
+    <g id="pillar-box">
+      <rect x="-8" y="-8" width="16" height="16" class="pillar"/>
+      <line x1="-8" y1="-8" x2="8" y2="8" class="hatch"/>
+      <line x1="-8" y1="8" x2="8" y2="-8" class="hatch"/>
+    </g>
+    <g id="door-left-in">
+      <path d="M 0,0 L 0,-15 A 15,15 0 0,1 15,0" stroke="#000000" stroke-width="1" fill="none"/>
+      <line x1="0" y1="0" x2="15" y2="0" stroke="#ffffff" stroke-width="3"/>
+    </g>
+    <g id="door-right-in">
+      <path d="M 0,0 L 0,-15 A 15,15 0 0,0 -15,0" stroke="#000000" stroke-width="1" fill="none"/>
+      <line x1="0" y1="0" x2="-15" y2="0" stroke="#ffffff" stroke-width="3"/>
+    </g>
+  </defs>
+  <line x1="410" y1="530" x2="410" y2="600" class="dashed-line"/>
+  <line x1="595" y1="530" x2="595" y2="600" class="dashed-line"/>
+  <path d="M 40 147 L 190 147 L 190 105 L 285 105 L 285 160 L 300 160 M 410 160 L 755 160 L 755 105 L 850 105 L 850 143 L 975 143 M 40 145 L 40 528 L 570 528 L 569.471 528.075 L 620 528.604 L 620 528 L 975 528 L 975 141" class="wall-thick"/>
+  <path d="M 250,295 L 755,295 L 755,160 L 250,160 Z" class="wall-thick"/>
+  <path d="M 40 245 L 187.662 244.669 L 187 315.383 L 187 350 M 40.502 293.961 L 185.014 290.444 M 40 350 L 187 350 L 187 528 M 93 350 L 93 425 L 187 425 M 93 388 L 150 388 L 150 425 M 150 402 L 187 402 M 207 350 L 300 350 L 300 425 M 262 350 L 262 528 M 300 350 L 435 350 L 435 528 M 298.354 424.731 L 353 424.731 L 353 425 M 375 395 L 435 395 M 375 438 L 435 438 M 375 482 L 435 482 M 353 425 L 353 528" class="wall-thin"/>
+  <path d="M 570 355 L 911.672 355.529 L 911.45 323.703 L 974.471 324.323 M 570 355 L 570 528 M 930.512 378.273 L 929.983 525.884 M 755.239 143.385 L 849.83 144.006 M 708.995 266.555 L 755.98 266.556 M 822 235 L 974.347 235 M 822 235 L 823.587 355.346 L 911.764 355.131 L 911.204 323.557 L 973.217 323.831 L 973.818 324.668" class="wall-thin"/>
+  <path d="M 189.698 148.962 L 249.698 148.962 L 249.196 267.933 L 296.684 267.933 M 250.2 188.508 L 296.708 189.01 M 249.698 228.962 L 294.698 228.962 M 711.205 182.981 L 754.698 183.484 M 710.2 224.44 L 754.698 223.938" class="wall-thin"/>
+  <g id="stairs-left" style="" transform="matrix(1, 0, 0, 1.285987, 0, -38.3764)">
+    <rect x="52" y="150" width="85" height="65" fill="none" stroke="#000000" stroke-width="1"/>
+    <line x1="52" y1="182.5" x2="137" y2="182.5" stroke="#000000" stroke-width="1"/>
+    <line x1="62" y1="150" x2="62" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="72" y1="150" x2="72" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="82" y1="150" x2="82" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="92" y1="150" x2="92" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="102" y1="150" x2="102" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="112" y1="150" x2="112" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="122" y1="150" x2="122" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <path d="M 125,165 L 135,165 M 135,165 L 131,161 M 135,165 L 131,169" stroke="#000000" stroke-width="0.75" fill="none"/>
+    <path d="M 125,200 L 135,200 M 125,200 L 129,196 M 125,200 L 129,204" stroke="#000000" stroke-width="0.75" fill="none"/>
+  </g>
+  <g id="stairs-right" style="" transform="matrix(1.174408, 0, 0, 1.191285, -150.862793, -28.692831)">
+    <rect x="865" y="150" width="85" height="65" fill="none" stroke="#000000" stroke-width="1"/>
+    <line x1="865" y1="182.5" x2="950" y2="182.5" stroke="#000000" stroke-width="1"/>
+    <line x1="875" y1="150" x2="875" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="885" y1="150" x2="885" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="895" y1="150" x2="895" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="905" y1="150" x2="905" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="915" y1="150" x2="915" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="925" y1="150" x2="925" y2="215" stroke="#000000" stroke-width="0.75"/>
+    <line x1="935" y1="150" x2="935" y2="215" stroke="#000000" stroke-width="0.75"/>
+  </g>
+  <g id="reception-pillars"/>
+  <g transform="matrix(6.123234262925839e-17, 1, -1, 6.123234262925839e-17, 187, 290)">
+    <path d="M 0,0 L 0,-15 A 15,15 0 0,1 15,0" stroke="#000000" stroke-width="1" fill="none"/>
+    <line x1="0" y1="0" x2="15" y2="0" stroke="#ffffff" stroke-width="3"/>
+  </g>
+  <g transform="matrix(6.123234262925839e-17, 1, -1, 6.123234262925839e-17, 187, 495)">
+    <path d="M 0,0 L 0,-15 A 15,15 0 0,1 15,0" stroke="#000000" stroke-width="1" fill="none"/>
+    <line x1="0" y1="0" x2="15" y2="0" stroke="#ffffff" stroke-width="3"/>
+  </g>
+  <g transform="matrix(6.123234262925839e-17, -1, 1, 6.123234262925839e-17, 207, 370)">
+    <path d="M 36.138 -2.503 L 36.138 -17.503 C 26.199 -17.503 18.142 -10.787 18.142 -2.503" stroke="#000000" stroke-width="1" fill="none" style="transform-origin: 27.14px -10.003px 0px;" transform="matrix(0.017452, 0.999848, -0.999848, 0.017452, 0, 0)"/>
+    <line x1="0" y1="0" x2="-15" y2="0" stroke="#ffffff" stroke-width="3"/>
+  </g>
+  <g transform="matrix(0, 1.212844, -1, 0, 300, 408.158539)" style="">
+    <line x1="0" y1="0" x2="15" y2="0" stroke="#ffffff" stroke-width="3"/>
+  </g>
+  <text x="55" y="260" class="text-main" style="white-space: pre;">ADMINISTRATION OFFICE-2</text>
+  <text x="65" y="325" class="text-main" style="white-space: pre;">BOARD ROOM</text>
+  <text x="105" y="375" class="text-small" style="white-space: pre;">TOILET</text>
+  <text x="105" y="412" class="text-small" style="white-space: pre;">TOILET</text>
+  <text x="98" y="445" class="text-main" style="white-space: pre;">PRINCIPAL OFFICE</text>
+  <text x="305" y="450" class="text-small" style="white-space: pre;">CABIN-1</text>
+  <text x="305" y="510" class="text-small" style="white-space: pre;">CABIN-2</text>
+  <text x="385" y="415" class="text-small" style="white-space: pre;">CUBICAL-1</text>
+  <text x="385" y="460" class="text-small" style="white-space: pre;">CUBICAL-1</text>
+  <text x="195" y="115" class="text-small" style="white-space: pre;">SERVER</text>
+  <text x="195" y="123" class="text-small" style="white-space: pre;">ROOM</text>
+  <text x="460" y="420" class="text-main" font-size="10px" style="white-space: pre;" transform="matrix(1.873468, 0, 0, 1.568015, -394.814514, -179.93483)">Main Exit<tspan x="460" dy="1em">​</tspan></text>
+  <text x="580" y="375" class="text-main" style="white-space: pre;" transform="matrix(1.284897, 0, 0, 2.764706, -81.671646, -591.574707)">MECHANICAL WORKSHOP</text>
+  <text x="765" y="115" class="text-small" style="white-space: pre;">ELECTRICAL</text>
+  <text x="775" y="123" class="text-small" style="white-space: pre;">ROOM</text>
+  <text x="834" y="258" class="text-small" style="white-space: pre;" transform="matrix(4.034773, 0, 0, 6.25, -2506.141846, -1308.219849)">TOILET</text>
+  <text x="138" y="168" class="text-small" style="white-space: pre;">DN</text>
+  <text x="138" y="203" class="text-small" style="white-space: pre;">UP</text>
+  <circle cx="20" cy="190" r="8" class="dot-red"/>
+  <circle cx="20" cy="270" r="8" class="dot-red"/>
+  <circle cx="20" cy="335" r="8" class="dot-red"/>
+  <circle cx="115.434" cy="529.229" r="8" class="dot-red"/>
+  <circle cx="311.283" cy="526.037" r="8" class="dot-red"/>
+  <circle cx="399.51" cy="528.317" r="8" class="dot-red"/>
+  <circle cx="501.272" cy="528.991" r="8" class="dot-red"/>
+  <circle cx="663.702" cy="527.719" r="8" class="dot-red"/>
+  <circle cx="767.116" cy="529.835" r="8" class="dot-red"/>
+  <circle cx="861.058" cy="529.306" r="8" class="dot-red"/>
+  <circle cx="985" cy="335" r="8" class="dot-red"/>
+  <circle cx="974.957" cy="183.826" r="8" class="dot-red"/>
+  <circle cx="208.558" cy="271.808" r="5" class="dot-yellow" style="" transform="matrix(1, 0, 0, 1.547317, -19.612188, -159.255493)"/>
+  <circle cx="369.3" cy="347.949" r="5" class="dot-yellow" style="" transform="matrix(1, 0, 0, 1.136829, 0, -46.925335)"/>
+  <circle cx="610.529" cy="354.008" r="5" class="dot-yellow" style="" transform="matrix(1.819829, 0, 0, 1, -504.628815, 0)"/>
+  <circle cx="804.471" cy="355.066" r="5" class="dot-yellow" style="" transform="matrix(2.03568, 0, 0, 1, -838.352783, 0)"/>
+  <circle cx="103.532" cy="176.982" r="7" class="dot-blue"/>
+  <circle cx="102.271" cy="216.397" r="7" class="dot-blue"/>
+  <circle cx="916.377" cy="170.26" r="7" class="dot-blue"/>
+  <circle cx="919.268" cy="208.13" r="7" class="dot-blue"/>
+  <circle cx="249.952" cy="202.299" r="7" class="dot-green"/>
+  <circle cx="247.44" cy="251.796" r="7" class="dot-green"/>
+  <circle cx="755.575" cy="204.309" r="7" class="dot-green"/>
+  <circle cx="756.58" cy="248.28" r="7" class="dot-green"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M -297.169 187.643 H -297.167 L -296.916 187.894 V 268.783 L -297.167 269.034 H -297.169 L -297.42 268.783 V 187.894 L -297.169 187.643 Z" bx:shape="rect -297.42 187.643 0.504 81.391 1 0.251 0.251 2@c1d8bc95" transform="matrix(-1, 0, 0, 1, 0, 0)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 1px;" d="M 709.903 184.125 H 709.903 L 710.153 184.376 V 266.27 L 709.903 266.521 H 709.903 L 709.652 266.27 V 184.376 L 709.903 184.125 Z" bx:shape="rect 709.652 184.125 0.501 82.396 1 0.251 0.251 2@e4ea7026"/>
+</svg>

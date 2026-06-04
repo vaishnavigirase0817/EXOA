@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXOA - App Navigation Test Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #09090b;
+      --surface: #18181b;
+      --surface-hover: #27272a;
+      --border: #3f3f46;
+      --text: #fafafa;
+      --text-muted: #a1a1aa;
+      --accent: #6366f1;
+      --accent-glow: rgba(99, 102, 241, 0.15);
+      --success: #10b981;
+      --warning: #f59e0b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      background: linear-gradient(to right, #ffffff, var(--text-muted));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .ip-selector {
+      margin-top: 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .ip-selector label {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .ip-input-group {
+      display: flex;
+      gap: 0.5rem;
+      flex-grow: 1;
+    }
+
+    .ip-input {
+      background: #09090b;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .ip-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn:hover {
+      background: #4f46e5;
+      transform: translateY(-1px);
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 2.5rem 0 1.25rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1.5rem;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.25rem;
+      transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px var(--accent-glow);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .room-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    .node-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.15rem 0.4rem;
+      border-radius: 0.25rem;
+      color: var(--text-muted);
+    }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .test-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 0.8rem;
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid transparent;
+      border-radius: 0.5rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .test-link:hover {
+      background: rgba(99, 102, 241, 0.08);
+      border-color: rgba(99, 102, 241, 0.2);
+      color: var(--accent);
+    }
+
+    .test-link .label {
+      font-weight: 600;
+    }
+
+    .test-link .url {
+      font-family: 'JetBrains Mono', monospace;
+      opacity: 0.7;
+    }
+
+    .badge-floor {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: 9999px;
+    }
+
+    .floor-0 { background: rgba(16, 185, 129, 0.1); color: var(--success); }
+    .floor-1 { background: rgba(99, 102, 241, 0.1); color: var(--accent); }
+    .floor-2 { background: rgba(245, 158, 11, 0.1); color: var(--warning); }
+    .floor-3 { background: rgba(168, 85, 247, 0.1); color: #a855f7; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>EXOA Navigation Link Generator</h1>
+      <p class="subtitle">Quick testing utility to trigger emergency exit routes from any QR node across all floors.</p>
+      
+      <div class="ip-selector">
+        <label for="ipAddress">Configure Server Address:</label>
+        <div class="ip-input-group">
+          <input type="text" id="ipAddress" class="ip-input" value="10.168.240.88">
+          <button class="btn" onclick="updateIP()">Apply IP</button>
+          <button class="btn" style="background: transparent; border: 1px solid var(--border);" onclick="resetToLocal()">Localhost</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- GROUND FLOOR -->
+    <div class="section-title">Ground Floor Rooms</div>
+    <div class="grid" id="floor-0-grid">
+      <!-- Generated via JS -->
+    </div>
+
+    <!-- FIRST FLOOR -->
+    <div class="section-title">First Floor Rooms</div>
+    <div class="grid" id="floor-1-grid">
+      <!-- Generated via JS -->
+    </div>
+
+    <!-- SECOND FLOOR -->
+    <div class="section-title">Second Floor Rooms</div>
+    <div class="grid" id="floor-2-grid">
+      <!-- Generated via JS -->
+    </div>
+
+    <!-- THIRD FLOOR -->
+    <div class="section-title">Third Floor Rooms</div>
+    <div class="grid" id="floor-3-grid">
+      <!-- Generated via JS -->
+    </div>
+  </div>
+
+  <script>
+    const groundFloorNodes = [
+      { id: 'G_QR_01', name: 'Admin Office' },
+      { id: 'G_QR_02', name: 'Workshop West' },
+      { id: 'G_QR_03', name: 'Workshop East' },
+      { id: 'G_QR_04', name: 'East Toilet' }
+    ];
+
+    const firstFloorNodes = [
+      { id: 'QR_01', name: 'Class Room 1' },
+      { id: 'QR_02', name: 'Class Room 2' },
+      { id: 'QR_03', name: 'Class Room 4' },
+      { id: 'QR_04', name: 'Class Room 5' },
+      { id: 'QR_05', name: 'Class Room 6' },
+      { id: 'QR_06', name: 'Class Room 7' },
+      { id: 'QR_07', name: 'Head Office' },
+      { id: 'QR_08', name: 'Kitchen' },
+      { id: 'QR_09', name: 'Canteen A' },
+      { id: 'QR_10', name: 'Canteen A Side' },
+      { id: 'QR_11', name: 'Girls Room' },
+      { id: 'QR_12', name: 'Unassigned Room' },
+      { id: 'QR_13', name: 'Physics Lab-1' }
+    ];
+
+    const secondFloorNodes = [
+      { id: 'S_QR_01', name: 'Computer Center W' },
+      { id: 'S_QR_02', name: 'Computer Center E' },
+      { id: 'S_QR_03', name: 'Drawing Hall W' },
+      { id: 'S_QR_04', name: 'Drawing Hall E' },
+      { id: 'S_QR_05', name: 'Class Room 1' },
+      { id: 'S_QR_06', name: 'Class Room 2' },
+      { id: 'S_QR_07', name: 'Class Room 3' },
+      { id: 'S_QR_08', name: 'Class Room 4' },
+      { id: 'S_QR_09', name: 'Class Room 5' },
+      { id: 'S_QR_10', name: 'HOD Office' },
+      { id: 'S_QR_11', name: 'Upper East Room' }
+    ];
+
+    const thirdFloorNodes = [
+      { id: 'T_QR_01', name: 'Seminar Room - 1' },
+      { id: 'T_QR_02', name: 'Staff Pantry' },
+      { id: 'T_QR_03', name: 'Staff Toilet' },
+      { id: 'T_QR_04', name: 'Language Laboratory' },
+      { id: 'T_QR_05', name: 'Tutorial Room - 1' },
+      { id: 'T_QR_06', name: 'Library West' },
+      { id: 'T_QR_07', name: 'Library East' },
+      { id: 'T_QR_08', name: 'Class Room - 6' }
+    ];
+
+    function updateIP() {
+      const ip = document.getElementById('ipAddress').value.trim();
+      renderAll(ip);
+    }
+
+    function resetToLocal() {
+      document.getElementById('ipAddress').value = 'localhost';
+      renderAll('localhost');
+    }
+
+    function createCard(node, floor, serverIP) {
+      const port = '5173';
+      const localhostUrl = `http://localhost:${port}/nav?node=${node.id}`;
+      const networkUrl = `http://${serverIP}:${port}/nav?node=${node.id}`;
+      const activeUrl = serverIP === 'localhost' ? localhostUrl : networkUrl;
+
+      return `
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="room-name">${node.name}</div>
+              <div class="node-badge" style="margin-top: 0.25rem; display: inline-block;">${node.id}</div>
+            </div>
+            <span class="badge-floor floor-${floor}">${floor === 0 ? 'Ground' : floor === 1 ? '1st Floor' : floor === 2 ? '2nd Floor' : '3rd Floor'}</span>
+          </div>
+          <div class="links-container">
+            <a href="${localhostUrl}" target="_blank" class="test-link">
+              <span class="label">Localhost Link</span>
+              <span class="url">localhost:${port}</span>
+            </a>
+            ${serverIP !== 'localhost' ? `
+            <a href="${networkUrl}" target="_blank" class="test-link">
+              <span class="label">Network IP Link</span>
+              <span class="url">${serverIP}:${port}</span>
+            </a>
+            ` : ''}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderAll(ip) {
+      document.getElementById('floor-0-grid').innerHTML = groundFloorNodes.map(n => createCard(n, 0, ip)).join('');
+      document.getElementById('floor-1-grid').innerHTML = firstFloorNodes.map(n => createCard(n, 1, ip)).join('');
+      document.getElementById('floor-2-grid').innerHTML = secondFloorNodes.map(n => createCard(n, 2, ip)).join('');
+      document.getElementById('floor-3-grid').innerHTML = thirdFloorNodes.map(n => createCard(n, 3, ip)).join('');
+    }
+
+    // Initial render
+    renderAll('10.168.240.88');
+  </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 710" width="100%" height="100%">
+  <defs>
+    <style>
+      .wall { stroke: #000000; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .thin-wall { stroke: #000000; stroke-width: 0.75; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .double-line { stroke: #000000; stroke-width: 0.5; fill: none; }
+      .text-main { font-family: Arial, sans-serif; font-size: 8px; fill: #000000; font-weight: bold; }
+      .text-large { font-family: Arial, sans-serif; font-size: 16px; fill: #000000; font-weight: normal; letter-spacing: 5px; }
+      .stair-line { stroke: #000000; stroke-width: 0.5; fill: none; }
+      
+      /* Dots */
+      .dot-yellow { fill: #FFCC00; }
+      .dot-blue { fill: #3344CC; }
+      .dot-green { fill: #00AA55; }
+    </style>
+  </defs>
+  <rect x="63" y="36" width="913" height="654" class="wall"/>
+  <rect x="65" y="38" width="909" height="650" class="wall"/>
+  <path d="" class="wall"/>
+  <path d="M 976,174 L 941,174 L 941,250 L 976,250" class="wall"/>
+  <path d="M 974,174 L 943,174 L 943,250 L 974,250" class="wall"/>
+  <path d="M 65,134 L 206,134 M 206,38 L 206,196" class="wall"/>
+  <path d="M 251,38 L 251,196 L 518,196 L 518,38" class="wall"/>
+  <path d="M 522,38 L 522,196 L 648,196 L 648,38" class="wall"/>
+  <path d="M 788,38 L 788,196 L 648,196" class="wall"/>
+  <path d="M 788,128 L 944,128 M 863,38 L 863,128" class="wall"/>
+  <path d="M 788,142 L 944,142 M 788,38 L 788,196" class="wall"/>
+  <path d="M 206 134 L 206 298 L 64.639 298.778" class="wall"/>
+  <path d="M 65 298.173 L 63.918 445.17 L 160.368 444.998 L 65 444" class="wall" style=""/>
+  <path d="M 65 532 L 197 532 L 198.194 443.526 L 161.189 444.273" class="wall"/>
+  <path d="M 64.821 607.391 L 253 607.391 L 253 532" class="wall" style=""/>
+  <path d="M 252.571 636 L 253 636 M 253 636 L 253 690" class="wall" style=""/>
+  <path d="M 307 532 L 307 608.545 L 285 608.545" class="wall" style=""/>
+  <path d="M 199.284 530.806 L 974 532" class="wall"/>
+  <path d="M 943.207 173.403 L 831.597 173.356 L 831 326 L 974 326" class="wall"/>
+  <path d="M 831.597 440.595 L 831 440 L 974 440" class="wall"/>
+  <path d="M 875,326 L 875,440 M 930,326 L 930,440" class="wall"/>
+  <path d="M 831.284 487.973 L 831 501.558 L 831 532" class="wall"/>
+  <path d="M 831.284 440.697 L 830.927 471.922 L 831.131 459.716 L 974 460 M 831 496 L 974 496" class="wall"/>
+  <path d="M 868,440 L 868,460 M 903,440 L 903,460 M 940,440 L 940,460" class="wall"/>
+  <path d="M 868,496 L 868,532 M 903,496 L 903,532 M 940,496 L 940,532" class="wall"/>
+  <rect x="271" y="259" width="498" height="213" class="wall"/>
+  <rect x="273" y="261" width="494" height="209" class="thin-wall"/>
+  <rect x="271" y="255" width="6" height="4" fill="#000000"/>
+  <rect x="350" y="255" width="6" height="4" fill="#000000"/>
+  <rect x="435" y="255" width="6" height="4" fill="#000000"/>
+  <rect x="520" y="255" width="6" height="4" fill="#000000"/>
+  <rect x="605" y="255" width="6" height="4" fill="#000000"/>
+  <rect x="690" y="255" width="6" height="4" fill="#000000"/>
+  <rect x="763" y="255" width="6" height="4" fill="#000000"/>
+  <rect x="271" y="472" width="6" height="4" fill="#000000"/>
+  <rect x="350" y="472" width="6" height="4" fill="#000000"/>
+  <rect x="435" y="472" width="6" height="4" fill="#000000"/>
+  <rect x="520" y="472" width="6" height="4" fill="#000000"/>
+  <rect x="605" y="472" width="6" height="4" fill="#000000"/>
+  <rect x="690" y="472" width="6" height="4" fill="#000000"/>
+  <rect x="763" y="472" width="6" height="4" fill="#000000"/>
+  <rect x="271" y="284" width="51" height="162" class="wall"/>
+  <line x1="271" y1="365" x2="322" y2="365" class="wall"/>
+  <rect x="276" y="289" width="41" height="71" class="thin-wall"/>
+  <rect x="276" y="370" width="41" height="71" class="thin-wall"/>
+  <rect x="718" y="284" width="51" height="162" class="wall"/>
+  <line x1="718" y1="365" x2="769" y2="365" class="wall"/>
+  <rect x="723" y="289" width="41" height="71" class="thin-wall"/>
+  <rect x="723" y="370" width="41" height="71" class="thin-wall"/>
+  <line x1="65" y1="355" x2="65" y2="420" class="wall"/>
+  <g class="stair-line" style="" transform="matrix(1.358109, 0, 0, 1.279937, -3.581092, -125.485924)">
+    <line x1="70" y1="331" x2="70" y2="387"/>
+    <line x1="75" y1="331" x2="75" y2="387"/>
+    <line x1="80" y1="331" x2="80" y2="387"/>
+    <line x1="85" y1="331" x2="85" y2="387"/>
+    <line x1="90" y1="331" x2="90" y2="387"/>
+    <line x1="95" y1="331" x2="95" y2="387"/>
+    <line x1="100" y1="331" x2="100" y2="387"/>
+    <line x1="105" y1="331" x2="105" y2="387"/>
+    <line x1="70" y1="387" x2="70" y2="444"/>
+    <line x1="75" y1="387" x2="75" y2="444"/>
+    <line x1="80" y1="387" x2="80" y2="444"/>
+    <line x1="85" y1="387" x2="85" y2="444"/>
+    <line x1="90" y1="387" x2="90" y2="444"/>
+    <line x1="95" y1="387" x2="95" y2="444"/>
+    <line x1="100" y1="387" x2="100" y2="444"/>
+    <line x1="105" y1="387" x2="105" y2="444"/>
+  </g>
+  <line x1="875" y1="383" x2="930" y2="383" class="wall"/>
+  <g class="stair-line">
+    <line x1="880" y1="326" x2="880" y2="383"/>
+    <line x1="885" y1="326" x2="885" y2="383"/>
+    <line x1="890" y1="326" x2="890" y2="383"/>
+    <line x1="895" y1="326" x2="895" y2="383"/>
+    <line x1="900" y1="326" x2="900" y2="383"/>
+    <line x1="905" y1="326" x2="905" y2="383"/>
+    <line x1="910" y1="326" x2="910" y2="383"/>
+    <line x1="915" y1="326" x2="915" y2="383"/>
+    <line x1="920" y1="326" x2="920" y2="383"/>
+    <line x1="925" y1="326" x2="925" y2="383"/>
+    <line x1="880" y1="383" x2="880" y2="440"/>
+    <line x1="885" y1="383" x2="885" y2="440"/>
+    <line x1="890" y1="383" x2="890" y2="440"/>
+    <line x1="895" y1="383" x2="895" y2="440"/>
+    <line x1="900" y1="383" x2="900" y2="440"/>
+    <line x1="905" y1="383" x2="905" y2="440"/>
+    <line x1="910" y1="383" x2="910" y2="440"/>
+    <line x1="915" y1="383" x2="915" y2="440"/>
+    <line x1="920" y1="383" x2="920" y2="440"/>
+    <line x1="925" y1="383" x2="925" y2="440"/>
+  </g>
+  <circle cx="295.319" cy="193.078" r="10" class="dot-yellow"/>
+  <circle cx="760" cy="196.775" r="10" class="dot-yellow"/>
+  <circle cx="832.016" cy="223.644" r="10" class="dot-yellow"/>
+  <circle cx="204.775" cy="275.754" r="10" class="dot-yellow"/>
+  <circle cx="196.435" cy="515.435" r="10" class="dot-yellow"/>
+  <circle cx="344.628" cy="529.032" r="10" class="dot-yellow"/>
+  <circle cx="750" cy="532.016" r="10" class="dot-yellow"/>
+  <circle cx="117.802" cy="337.257" r="10" class="dot-blue"/>
+  <circle cx="116.608" cy="405.597" r="10" class="dot-blue"/>
+  <circle cx="902.309" cy="355.34" r="10" class="dot-blue"/>
+  <circle cx="901.115" cy="409.162" r="10" class="dot-blue"/>
+  <circle cx="263.622" cy="323.953" r="6" class="dot-green"/>
+  <circle cx="265.198" cy="401.845" r="6" class="dot-green"/>
+  <circle cx="767.061" cy="322.912" r="6" class="dot-green"/>
+  <circle cx="768.338" cy="409.074" r="6" class="dot-green"/>
+  <text x="100" y="98" class="text-main" style="white-space: pre;">BOYS TOILET</text>
+  <text x="303" y="103" class="text-main" font-size="10px" style="white-space: pre;">SEMINAR ROOM -1</text>
+  <text x="532" y="102" class="text-main" style="white-space: pre;">CLASS ROOM-6</text>
+  <text x="797" y="85" class="text-main" style="white-space: pre;">STAFF PANTRY</text>
+  <text x="150" y="275" class="text-main" text-anchor="end" style="white-space: pre;">LANGUAGE</text>
+  <text x="150" y="283" class="text-main" text-anchor="end" style="white-space: pre;">LABORATORY</text>
+  <text x="86.047" y="495.045" class="text-main" style="white-space: pre;">TUTORIAL ROOM-1</text>
+  <text x="165" y="920" class="text-main" text-anchor="middle" style="white-space: pre;">LIBR</text>
+  <text x="270" y="935" class="text-main" style="white-space: pre;">E-LIBRARY</text>
+  <text x="600" y="605" class="text-main" font-size="9px" style="white-space: pre;">LIBRARY</text>
+  <text x="850" y="230" class="text-main" style="white-space: pre;">LADE</text>
+  <text x="296" y="331" class="text-main" text-anchor="middle" font-size="9px" style="white-space: pre;">LIFT</text>
+  <text x="296" y="413" class="text-main" text-anchor="middle" font-size="9px" style="white-space: pre;">LIFT</text>
+  <text x="744" y="331" class="text-main" text-anchor="middle" font-size="9px" style="white-space: pre;">LIFT</text>
+  <text x="744" y="413" class="text-main" text-anchor="middle" font-size="9px" style="white-space: pre;">LIFT</text>
+  <text x="510" y="372" class="text-large" text-anchor="middle" style="white-space: pre;">ATRIUM</text>
+  <circle cx="542.39" cy="193.71" r="10" class="dot-yellow" style="stroke-width: 1px;"/>
+  <path d="M 139.957 370.276 L 91.098 370.425" class="wall" style="stroke-width: 1.5px;"/>
+  <path d="M 307.1 690.486 L 307.1 637.366 L 251.985 637.366" class="wall" style="stroke-width: 1.5px; transform-origin: 279.541px 663.926px 0px;"/>
+</svg>
